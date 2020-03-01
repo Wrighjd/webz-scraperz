@@ -13,7 +13,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://heroku_xd394bdd:ncntvcs1jnacmt48iaiodvflb7@ds161016.mlab.com:61016/heroku_xd394bdd" , {
+mongoose.connect(" " , {
 	useMongoClient: true
 });
 
@@ -183,5 +183,5 @@ app.delete("/notes/delete/:note_id/:article", function(req,res){
 });
 
 app.listen(PORT, function(){
-	console.log("App running on PORT: " + PORT);
+	console.log("App running on localhost:" + PORT);
 });
